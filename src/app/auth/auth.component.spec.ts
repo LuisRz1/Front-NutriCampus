@@ -23,7 +23,7 @@ describe('AuthComponent', () => {
 
   it('should display a success message on correct login', () => {
     component.loginForm.setValue({
-      username: 'testtuser',
+      username: 'testuser',
       password: 'password'
     });
     component.login();
