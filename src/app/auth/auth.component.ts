@@ -1,4 +1,4 @@
-// auth.component.ts
+
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 
@@ -6,8 +6,8 @@ import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angula
   selector: 'app-auth',
   templateUrl: './auth.component.html',
   styleUrls: ['./auth.component.scss'],
-  standalone: true,  // Indica que este es un componente standalone
-  imports: [ReactiveFormsModule]  // Asegúrate de importar ReactiveFormsModule
+  standalone: true,
+  imports: [ReactiveFormsModule]
 })
 export class AuthComponent {
   loginForm: FormGroup;

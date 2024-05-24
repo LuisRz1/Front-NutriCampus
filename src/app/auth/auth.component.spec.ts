@@ -1,4 +1,3 @@
-// auth.component.spec.ts
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AuthComponent } from './auth.component';
@@ -9,7 +8,7 @@ describe('AuthComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ReactiveFormsModule, AuthComponent] // Asegúrate de importar AuthComponent y ReactiveFormsModule
+      imports: [ReactiveFormsModule, AuthComponent]
     })
       .compileComponents();
 
@@ -28,7 +27,7 @@ describe('AuthComponent', () => {
       password: 'password'
     });
     component.login();
-    fixture.detectChanges();  // Detecta los cambios para actualizar el DOM
+    fixture.detectChanges();
     expect(component.message).toBe('Login successful');
   });
 
@@ -38,7 +37,7 @@ describe('AuthComponent', () => {
       password: 'wrongpassword'
     });
     component.login();
-    fixture.detectChanges();  // Detecta los cambios para actualizar el DOM
+    fixture.detectChanges();
     expect(component.message).toBe('Invalid username or password');
   });
 });
